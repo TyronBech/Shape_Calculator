@@ -16,6 +16,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import shapes.Circle;
+import shapes.Rectangle;
+import shapes.Trapezoid;
+import shapes.Triangle;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
@@ -100,15 +103,16 @@ public class Main {
 		Left_Panel.add(Triangle2_Button);
 		Left_Panel.add(Triangle3_Button);
 		Left_Panel.add(Trapezoid_Button);
-		
-		Circle_Button.addActionListener(e -> {
-			try {
-				new Circle(frame, Center_Panel);
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-		});
 		frame.setVisible(true);
+		// actions for each button
+		Circle_Button.addActionListener(e -> Circle.circle(frame, Center_Panel));
+		Oval_Button.addActionListener(e -> Circle.oval(frame, Center_Panel));
+		Square_Button.addActionListener(e -> Rectangle.square(frame, Center_Panel));
+		Rectangle_Button.addActionListener(e -> Rectangle.rectangle(frame, Center_Panel));
+		Triangle1_Button.addActionListener(e -> Triangle.equilateral(frame, Center_Panel));
+		Triangle2_Button.addActionListener(e -> Triangle.right(frame, Center_Panel));
+		Triangle3_Button.addActionListener(e -> Triangle.scalene(frame, Center_Panel));
+		Trapezoid_Button.addActionListener(e -> Trapezoid.trapezoid(frame, Center_Panel));
 	}
 	public static Image resizer(String file, int width, int height) throws IOException {
 		BufferedImage resized_shape = ImageIO.read(new File(file));
