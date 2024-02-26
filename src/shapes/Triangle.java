@@ -27,7 +27,7 @@ public class Triangle extends Parent {
 		String image = "C:\\Users\\tyron\\OneDrive\\Desktop\\Java\\Shape Calculator\\Shape_Calculator\\src\\images\\equilateral.png";
 		Center_Panel_class equilateral_panel = null;
 		try {
-			equilateral_panel = new Center_Panel_class(frame, panel, image);
+			equilateral_panel = new Center_Panel_class(frame, panel, image, 0);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -37,7 +37,7 @@ public class Triangle extends Parent {
 		String image = "C:\\Users\\tyron\\OneDrive\\Desktop\\Java\\Shape Calculator\\Shape_Calculator\\src\\images\\right.png";
 		Center_Panel_class right_panel = null;
 		try {
-			right_panel = new Center_Panel_class(frame, panel, image);
+			right_panel = new Center_Panel_class(frame, panel, image, 0);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -47,7 +47,7 @@ public class Triangle extends Parent {
 		String image = "C:\\Users\\tyron\\OneDrive\\Desktop\\Java\\Shape Calculator\\Shape_Calculator\\src\\images\\scalene.png";
 		Center_Panel_class scalene_panel = null;
 		try {
-			scalene_panel = new Center_Panel_class(frame, panel, image);
+			scalene_panel = new Center_Panel_class(frame, panel, image, 0);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

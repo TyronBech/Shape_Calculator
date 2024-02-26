@@ -20,7 +20,7 @@ public class Trapezoid extends Parent {
 		String image = "C:\\Users\\tyron\\OneDrive\\Desktop\\Java\\Shape Calculator\\Shape_Calculator\\src\\images\\trapezoid.png";
 		Center_Panel_class trapezoid_panel = null;
 		try {
-			trapezoid_panel = new Center_Panel_class(frame, panel, image);
+			trapezoid_panel = new Center_Panel_class(frame, panel, image, 0);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
