@@ -1,4 +1,4 @@
-#Area Calculator in Java
+# Area Calculator in Java
 This program is a simple GUI calculator that solves the area of the shape. This program only contains 2D shapes, these shapes are:
 * Circle
 * Oval
