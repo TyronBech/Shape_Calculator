@@ -44,11 +44,40 @@ public class Rectangle extends Parent {
 	public static void rectangle(JFrame frame, JPanel panel) {
 		String image = "C:\\Users\\tyron\\OneDrive\\Desktop\\Java\\Shape Calculator\\Shape_Calculator\\src\\images\\rectangle.png";
 		try {
-			input_panel = new Center_Panel_class(frame, panel, image, 0);
+			input_panel = new Center_Panel_class(frame, panel, image, 60);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		JPanel aPanel = new JPanel();
+		JPanel bPanel = new JPanel();
+		JPanel buttonPanel = new JPanel();
+		aPanel.setBackground(new Color(0xF6F193));
+		bPanel.setBackground(new Color(0xF6F193));
+		buttonPanel.setBackground(new Color(0xF6F193));
+		buttonPanel.setPreferredSize(new Dimension(500, 40));
+		JLabel a_label = new JLabel("a:");
+		JLabel b_label = new JLabel("b:");
+		a_label.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		b_label.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		JTextField a = new JTextField();
+		JTextField b = new JTextField();
+		a.setFont(new Font("Arial", Font.ROMAN_BASELINE, 20));
+		b.setFont(new Font("Arial", Font.ROMAN_BASELINE, 20));
+		a.setPreferredSize(new Dimension(300, 40));
+		b.setPreferredSize(new Dimension(300, 40));
+		aPanel.add(a_label);
+		bPanel.add(b_label);
+		JButton submit_button = new JButton("Submit");
+		submit_button.setFocusable(false);
+		aPanel.add(a);
+		bPanel.add(b);
+		buttonPanel.add(submit_button);
+		input_panel.Input_panel.add(aPanel);
+		input_panel.Input_panel.add(bPanel);
+		input_panel.Input_panel.add(buttonPanel);
+		submit_button.addActionListener(e -> compute_rectangle(a.getText(), b.getText()));
+		frame.setVisible(true);
 	}
 	private static void compute_square(String side) {
 		try {
@@ -60,6 +89,33 @@ public class Rectangle extends Parent {
 					throw new ArithmeticException();
 				} else {
 					Parent.area = Math.pow(parsedSide, 2);
+					DecimalFormat format_result = new DecimalFormat("0.00");
+					String strResult = format_result.format(Parent.area);
+					Output(strResult);
+				}
+			}
+		} catch(IOException e1) {
+			JOptionPane.showMessageDialog(null, "Input should not be empty", "Error", JOptionPane.WARNING_MESSAGE);
+			remove_panel();
+		} catch(NumberFormatException e2) {
+			JOptionPane.showMessageDialog(null, "Cannot input non-numeric type characters", "Error", JOptionPane.WARNING_MESSAGE);
+			remove_panel();
+		} catch(ArithmeticException e3) {
+			JOptionPane.showMessageDialog(null, "Cannot input 0 or negative numbers", "Error", JOptionPane.WARNING_MESSAGE);
+			remove_panel();
+		}
+	}
+	private static void compute_rectangle(String a, String b) {
+		try {
+			if(a.isEmpty() || b.isEmpty()) {
+				throw new IOException();
+			} else {
+				double parsed_a = Double.parseDouble(a);
+				double parsed_b = Double.parseDouble(b);
+				if(parsed_a <= 0 || parsed_b <= 0) {
+					throw new ArithmeticException();
+				} else {
+					Parent.area = parsed_a * parsed_b;
 					DecimalFormat format_result = new DecimalFormat("0.00");
 					String strResult = format_result.format(Parent.area);
 					Output(strResult);
