@@ -8,4 +8,5 @@ This program is a simple GUI calculator that solves the area of the shape. This 
 * Right Triangle
 * Scalene Triangle
 * Trapezoid
+
 The program also have image for each shapes and their corresponding formula on how to solve their area.
