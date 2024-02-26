@@ -27,18 +27,18 @@ public class Rectangle extends Parent {
 		}
 		JLabel radius_label = new JLabel("a:");
 		radius_label.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		JTextField radius = new JTextField();
-		radius.setFont(new Font("Arial", Font.ROMAN_BASELINE, 20));
-		radius.setPreferredSize(new Dimension(300, 40));
+		JTextField side = new JTextField();
+		side.setFont(new Font("Arial", Font.ROMAN_BASELINE, 20));
+		side.setPreferredSize(new Dimension(300, 40));
 		JPanel radius_panel = new JPanel();
 		radius_panel.setBackground(new Color(0xF6F193));
 		JButton submit_button = new JButton("Submit");
 		submit_button.setFocusable(false);
 		radius_panel.add(radius_label);
-		radius_panel.add(radius);
+		radius_panel.add(side);
 		input_panel.Input_panel.add(radius_panel);
 		input_panel.Input_panel.add(submit_button);
-		submit_button.addActionListener(e -> compute_square(radius.getText()));
+		submit_button.addActionListener(e -> compute_square(side.getText()));
 		frame.setVisible(true);
 	}
 	public static void rectangle(JFrame frame, JPanel panel) {
