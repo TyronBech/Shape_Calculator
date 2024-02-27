@@ -31,9 +31,9 @@ public class Center_Panel_class {
 		Output_panel = new JPanel();
 		JLabel space_label = new JLabel();
 		space_label.setPreferredSize(new Dimension(1000, vgap));
-		Image_panel.setBackground(new Color(0xC5EBAA));
-		Input_panel.setBackground(new Color(0xF6F193));
-		Output_panel.setBackground(new Color(0xF2C18D));
+		Image_panel.setBackground(new Color(0xC3DBD9));
+		Input_panel.setBackground(new Color(0xC3DBD9));
+		Output_panel.setBackground(new Color(0xC3DBD9));
 		Image_panel.setPreferredSize(new Dimension(275, 275));
 		Input_panel.setPreferredSize(new Dimension(100, 100));
 		Output_panel.setPreferredSize(new Dimension(100, 225));

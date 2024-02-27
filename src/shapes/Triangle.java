@@ -31,7 +31,7 @@ public class Triangle extends Parent {
 		a.setFont(new Font("Arial", Font.ROMAN_BASELINE, 20));
 		a.setPreferredSize(new Dimension(300, 40));
 		JPanel radius_panel = new JPanel();
-		radius_panel.setBackground(new Color(0xF6F193));
+		radius_panel.setBackground(new Color(0xC3DBD9));
 		JButton submit_button = new JButton("Submit");
 		submit_button.setFocusable(false);
 		radius_panel.add(radius_label);
@@ -52,9 +52,9 @@ public class Triangle extends Parent {
 		JPanel aPanel = new JPanel();
 		JPanel bPanel = new JPanel();
 		JPanel buttonPanel = new JPanel();
-		aPanel.setBackground(new Color(0xF6F193));
-		bPanel.setBackground(new Color(0xF6F193));
-		buttonPanel.setBackground(new Color(0xF6F193));
+		aPanel.setBackground(new Color(0xC3DBD9));
+		bPanel.setBackground(new Color(0xC3DBD9));
+		buttonPanel.setBackground(new Color(0xC3DBD9));
 		buttonPanel.setPreferredSize(new Dimension(500, 40));
 		JLabel a_label = new JLabel("a:");
 		JLabel b_label = new JLabel("b:");
@@ -92,10 +92,10 @@ public class Triangle extends Parent {
 		JPanel bPanel = new JPanel();
 		JPanel cPanel = new JPanel();
 		JPanel buttonPanel = new JPanel();
-		aPanel.setBackground(new Color(0xF6F193));
-		bPanel.setBackground(new Color(0xF6F193));
-		cPanel.setBackground(new Color(0xF6F193));
-		buttonPanel.setBackground(new Color(0xF6F193));
+		aPanel.setBackground(new Color(0xC3DBD9));
+		bPanel.setBackground(new Color(0xC3DBD9));
+		cPanel.setBackground(new Color(0xC3DBD9));
+		buttonPanel.setBackground(new Color(0xC3DBD9));
 		buttonPanel.setPreferredSize(new Dimension(500, 40));
 		JLabel a_label = new JLabel("a:");
 		JLabel b_label = new JLabel("b:");
@@ -216,7 +216,7 @@ public class Triangle extends Parent {
 		JLabel space_label = new JLabel();
 		space_label.setPreferredSize(new Dimension(1000, 75));
 		output_label.setFont(new Font("Times New Roman", Font.BOLD, 40));
-		output_label.setBackground(new Color(0xF2C18D));
+		output_label.setBackground(new Color(0xC3DBD9));
 		input_panel.Output_panel.add(space_label);
 		input_panel.Output_panel.add(output_label);
 		input_panel.ref_frame.setVisible(true);
