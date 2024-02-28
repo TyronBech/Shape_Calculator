@@ -56,8 +56,8 @@ public class Triangle extends Parent {
 		bPanel.setBackground(new Color(0xC3DBD9));
 		buttonPanel.setBackground(new Color(0xC3DBD9));
 		buttonPanel.setPreferredSize(new Dimension(500, 40));
-		JLabel a_label = new JLabel("a:");
-		JLabel b_label = new JLabel("b:");
+		JLabel a_label = new JLabel("b:");
+		JLabel b_label = new JLabel("h:");
 		a_label.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		b_label.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		JTextField a = new JTextField();
@@ -96,7 +96,7 @@ public class Triangle extends Parent {
 		bPanel.setBackground(new Color(0xC3DBD9));
 		cPanel.setBackground(new Color(0xC3DBD9));
 		buttonPanel.setBackground(new Color(0xC3DBD9));
-		buttonPanel.setPreferredSize(new Dimension(500, 40));
+		buttonPanel.setPreferredSize(new Dimension(1500, 40));
 		JLabel a_label = new JLabel("a:");
 		JLabel b_label = new JLabel("b:");
 		JLabel c_label = new JLabel("c:");

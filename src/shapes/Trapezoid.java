@@ -41,7 +41,7 @@ public class Trapezoid extends Parent {
 		bPanel.setBackground(new Color(0xC3DBD9));
 		hPanel.setBackground(new Color(0xC3DBD9));
 		buttonPanel.setBackground(new Color(0xC3DBD9));
-		buttonPanel.setPreferredSize(new Dimension(500, 40));
+		buttonPanel.setPreferredSize(new Dimension(1500, 40));
 		JLabel a_label = new JLabel("a:");
 		JLabel b_label = new JLabel("b:");
 		JLabel h_label = new JLabel("h:");
